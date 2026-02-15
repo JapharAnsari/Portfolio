@@ -1,0 +1,824 @@
+@import 'utilities.css';
+html{
+    font-size: 15px;
+}
+
+:root{
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+    --secondary: #070606;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.hero{
+    padding: 3rem 0;
+}
+
+.hero .left img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5%;
+}
+
+.hero .right{
+    color: var(--pure);
+}
+
+.hero .right h6{
+
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+    
+}
+
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.hero .right{
+    margin-top: -3rem;
+}
+
+
+section{
+    padding: 6rem 0;
+}
+
+.about .about-me-img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about .flex-1 img{
+    max-width: 100%;
+    display: block;
+}
+
+
+.about .container{
+    gap: 6rem;
+}
+
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+}
+
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+section.about p{
+    font-family: 'loto', sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+section.about .social{
+    display: flex;
+    gap: 1rem;
+}
+
+
+section.about .social a{
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+    transition: all .3s ease;
+}
+
+section.about .social a:hover{
+    background: var(--primary);
+    color: var(--dark);
+}
+
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading +p{
+    color: var(--ternary);
+    font-family: 'lato', sans-serif;
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+section.services{
+    background: var(--light);
+}
+
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+}
+
+section.services .card-wrapper img{
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+    position: absolute;
+    bottom: 7rem;
+    transform: translateX(-50%);
+
+}
+
+section.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all .10s ease;
+}
+
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p{
+    font-family: 'lato' sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+section.Freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 80%, 0 100%);
+    padding-bottom: 12rem;
+}
+
+section.Freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.Freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'lato', sans-serif;
+
+}
+
+section.reviews .slider .slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 6rem;
+}
+
+section.reviews .slider .slide p{
+    font-family: 'lato',sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+
+section.reviews .slider .slide span{
+    font-size: 0.8rem;
+}
+
+section.reviews .slider-dots .dots{
+    list-style-type: none;
+    display: flex! important;
+    justify-content: center;
+}
+
+section.reviews .slider-dots{
+    margin-top: 3rem;
+}
+
+section.reviews .slider-dots button{
+    font-size: 0;
+    width: 30px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+section.reviews .dots li.slick-active button{
+    background: var(--primary);
+    width: 60px;
+}
+
+section.work{
+    background: var(--light);
+}
+
+section.work .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    grid-gap:2rem;
+    
+}
+section.work .card-wrapper .card{
+    position: relative;
+    height: 250px;
+}
+
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61,207,211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+section.work .card-wrapper .card:hover .overlay{
+    opacity: 1;
+
+}
+
+
+section.work .card-wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+section.work .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+section.blog{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 88%, 0 100%);
+    padding-bottom: 17rem;
+}
+
+section.blog .section-heading{
+    color: var(--pure);
+}
+
+section.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:3rem;
+}
+
+section.blog .card-wrapper .card{
+    background: var(--pure);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+section.blog .card-wrapper .card .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+section.blog .card-wrapper .card .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right:2rem;
+}
+section.blog .card-wrapper .card .card-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+section.blog .card-wrapper .card .card-content a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+section.blog .card-wrapper .card .card-content a:hover{
+    color: var(--primary);
+}
+section.blog .card-wrapper .card .card-content span{
+    color: var(--ternary);
+    font-size: 0.8rem;
+}
+section.blog .card-wrapper .card .card-content p{
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section.blog .card-wrapper .card .card-content a.read-more{
+    font-size: 0.8rem;
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:3rem;
+
+}
+
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+
+section.contact .card-wrapper .card img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 3rem;
+    border-radius: 50%;       
+    object-fit: cover;        
+    background: var(--light); 
+    padding: 1rem;            
+}
+
+
+section.contact .card-wrapper .card h2{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:2rem;
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+section.contact input,
+section.contact textarea{
+    padding: 0.8rem;
+    border: 2px solid var(--ternary);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+
+section.contact input:focus,
+section.contact textarea:focus{
+    border-color: var(--primary);
+    box-shadow: 0 0 6px rgba(61, 207, 211, 0.6);
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 3%;
+}
+
+section.contact textarea{
+    min-height: 150px;   
+    resize: vertical;
+}
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+footer .footer-logo{
+    width: 120px;
+    margin-bottom: 3rem;
+    padding: 0.6rem;
+    background: #fff;        
+    border-radius: 12px;       
+    filter: brightness(1.1);
+}
+
+
+footer .footer-socials{
+    margin-bottom: 3%;
+}
+
+footer .footer-socials a{
+    margin: 0 0.8rem;
+    display: inline-block;
+}
+
+footer .footer-socials img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+footer .copyright{
+    color: var(--ternary);
+}
+
+@media (max-width:1024px) {
+    #header #main-nav{
+        display: none;
+    }
+}
+
+site-main-wrapper{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top:40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.hamberger img{
+    width: 30px;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+.social a,
+.footer-socials a,
+.contact a {
+    text-decoration: none;
+}
+.contact a{
+    color: black;
+}
+
+.mobile-nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1001;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    transform: translateX(-100%);
+    transition: all .8s ease-in-out;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+
+}
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+    margin-top: 5rem;
+}
+
+.mobile-nav ul li {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.mobile-nav ul li a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Media for Mobile---- */
+
+@media (max-width: 1024px) {
+
+
+    .hamberger{
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 4rem;
+    }
+
+    .hero .left img {
+        max-width: 300px;
+    }
+
+    .hero .right h1 {
+        font-size: 3rem;
+    }
+
+    section.services .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.work .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.blog .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.contact .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    @media (max-width: 768px) {
+
+    .hamberger {
+        position: fixed;  
+        top: 20px;
+        right: 20px;
+        z-index: 2000; 
+    }
+}
+
+    header {
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 100%,
+            85% 96%,
+            0 100%
+        );
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .left {
+        margin-bottom: 2rem;
+        overflow: hidden;
+        border-radius: 5%;
+    }
+
+    .hero .left img {
+        border-radius: 0;
+        display: block;
+    }
+
+    .hero .right {
+        margin-top: 0;
+    }
+
+    .hero .right h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero .right p {
+        font-size: 0.95rem;
+    }
+
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .about .about-me-img {
+        height: auto;
+    }
+
+    .about .social {
+        justify-content: center;
+    }
+
+    section.services .card-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    section.services .card-wrapper img {
+        position: static;
+        transform: none;
+        margin-bottom: 1rem;
+    }
+
+    section.Freelancer {
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 100%,
+            80% 95%,
+            0 100%
+        );
+    }
+
+    section.Freelancer h1 {
+        font-size: 1.6rem;
+    }
+
+    section.reviews .slider .slide {
+        padding: 0 2rem;
+    }
+
+    section.work .card-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    section.blog {
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 100%,
+            85% 97%,
+            0 100%
+        );
+        padding-bottom: 6rem;
+    }
+
+    section.blog .card-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    section.contact .card-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    section.contact .input-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-socials a {
+        margin: 0 0.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 13.5px;
+    }
+
+    .hero .right h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 3rem 0;
+    }
+}
+
+
